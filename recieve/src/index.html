@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="utf-8">
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src-elem 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com;">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>ファイル受信ソフト</title>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <main class="center_outer">
+            <h2>ファイルを受け取ることができます</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <h3>送信用webページ</h3>
+                            URL
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="uploader_url" readonly>
+                        </td>
+                        <td class="button_outer">
+                            <button id="url_copy">コピー</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            埋め込みコード
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="uploader_iframe" readonly>
+                        </td>
+                        <td class="button_outer">
+                            <button id="iframe_copy">コピー</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <br>
+                            <h3>保存先フォルダ</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="folder_path" readonly>
+                        </td>
+                        <td class="button_outer">
+                            <button id="folder_selector">変更</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </body>
+
+</html>
